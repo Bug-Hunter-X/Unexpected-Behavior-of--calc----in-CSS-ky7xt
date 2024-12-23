@@ -1,0 +1,23 @@
+/* bugSolution.css */
+.container {
+  display: flex;
+  width: 100%; /* Explicitly set the width of the container */
+}
+
+.element {
+  width: calc(100% - 20px); /* Calculation will now work correctly */
+  background-color: lightblue;
+  padding: 10px;
+}
+
+/* Or, for more robust calculation, ensure parent has appropriate width set */
+.container2 {
+  width: 500px; /* Explicit width to resolve issues with percentage calculations */
+  display: flex;
+}
+
+.element2 {
+  width: calc(50% - 10px);
+  background-color: lightgreen;
+  margin: 10px;
+} 
