@@ -1,0 +1,2 @@
+The CSS property `calc()` is used incorrectly, leading to unexpected results or rendering errors. For example, using `calc(100% - 10px)` inside a `width` property of an element inside a flex container may not behave as expected, because the flex container may not have its own 100% width defined, rendering the calculation incorrect.
+Another common error is incorrect operator precedence in `calc()` expressions.  Make sure to use parentheses appropriately to force the intended order of operations.
